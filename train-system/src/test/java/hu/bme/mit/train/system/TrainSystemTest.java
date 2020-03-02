@@ -21,7 +21,7 @@ public class TrainSystemTest {
 		controller = system.getController();
 		sensor = system.getSensor();
 		user = system.getUser();
-f
+
 		sensor.overrideSpeedLimit(50);
 	}
 	
@@ -42,6 +42,13 @@ f
 		Assert.assertEquals(20, controller.getReferenceSpeed());
 		controller.followSpeed();
 		Assert.assertEquals(20, controller.getReferenceSpeed());
+
+	}
+
+	@Test
+	public void RandomTest() {
+		String test = "asdf";
+		Assert.assertEquals("asdf", test);
 
 	}
 
